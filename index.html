@@ -184,10 +184,10 @@
     <small>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a></small>
   </div>
 </footer>
-   <script>
-  function scrollCards(direction) {
+<script>
+   function scrollCards(direction) {
     const container = document.getElementById("cardContainer");
-    const scrollAmount = 300; // adjust this value to control how much it scrolls
+    const scrollAmount = 300; 
 
     if (direction === "left") {
       container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
@@ -202,19 +202,15 @@
       const answer = btn.nextElementSibling;
       const isOpen = btn.classList.contains("active");
 
-      // Close all open answers
       document.querySelectorAll(".faq-questions").forEach((q) => q.classList.remove("active"));
       document.querySelectorAll(".faq-Answers").forEach((a) => a.classList.remove("active"));
 
-      // Toggle current
       if (!isOpen) {
         btn.classList.add("active");
         answer.classList.add("active");
       }
     });
   });
-
-
 </script>
 
 </body>

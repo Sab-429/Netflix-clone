@@ -96,7 +96,7 @@ select{
 }
 
 h1{
-    font-family: unset;
+    font-family: "Martel Sans", sans-serif;
     font-size: clamp(2 rem,5vw,4 rem);
     font-weight: 900;
     margin-bottom: 0.5rem;
@@ -104,8 +104,11 @@ h1{
     font-weight: 700;
     line-height: 125%;
 }
+h2{
+   font-family: "Martel Sans", sans-serif;
+}
 p{
-    font-family: unset;
+    font-family: "Martel Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
@@ -327,6 +330,7 @@ button{
   color: white;
   border: none;
   text-align: left;
+  align-items: center;
   cursor: pointer;
   position: relative;
   transition: background 0.3s ease;

@@ -1,0 +1,465 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+
+}
+.main{
+    background-image: url('Assets/images/bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding-bottom: 0;
+}
+.box{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.71;
+    z-index: 0;
+}
+.logo{
+    fill: red;
+    width: 160px;
+    height: 3.5rem;
+    z-index: 1;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20rem;
+    top: 26px;
+    bottom: 26px;
+    position: relative;
+}
+.side-buttons a {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 23px;
+    border-radius: 4px;
+    font-weight: 400;
+
+}
+select{
+    padding: 3px 8px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 145px;
+    height: 2.2rem;
+    align-items: center;
+    font-size: 1.27rem; ;
+}
+.side-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index:1;
+}
+.hero{
+    font-family: "Martel Sans", sans-serif;
+    position:relative;
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    gap: 23px;
+    padding:0 30px;
+}
+
+h1{
+    font-family: unset;
+    font-size: clamp(2 rem,5vw,4 rem);
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    line-height: 125%;
+}
+p{
+    font-family: unset;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+span{
+    color: rgb(255, 255, 255);
+    font-family: unset;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    
+}
+.separation{
+    height: 7px;
+    background-color: gray;
+}
+.center-buttons{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    gap: 15px;
+}
+input{
+    background-color: transparent;
+    color: white;
+    width:clamp(305px,24vw);
+    height: 6vh;
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+button{
+    background-color: red;
+    color: white;
+    padding: 0.1rem;
+    border: 1px solid grey;
+    font-size: 0.92rem;
+    font-weight:700;
+    height: 6vh;
+    width: clamp(200px,13vw);
+    border-radius: 0.25rem;
+    padding: 3px 17px;
+}
+.buttom-curve{
+   border: 4px solid red;
+   border-radius: 100% 100% 0px 0px;
+   height: 100px;
+   width: 100%;
+   background: radial-gradient( 50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%,  rgba(0, 0, 0, 0.1) 100%  ),rgb(12, 0, 0);
+   border-left: none;
+   border-bottom: none;
+   border-right: none;
+   margin-top: 0;
+}
+.card-section {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.scroll-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  width: 90%;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; /* Hide scroll bar */
+}
+
+.main-card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  aspect-ratio: 2 / 3;
+  border-radius: 8px;
+  line-height: 300px;
+  overflow: hidden;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.main-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps aspect ratio like Netflix */
+  border-radius: 8px;
+}
+
+.main-card:hover {
+  transform: scale(1.10);
+}
+
+.scroll-btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.scroll-btn.left {
+  margin-right: 10px;
+}
+
+.scroll-btn.right {
+  margin-left: 10px;
+}
+
+.responsive-wrapper {
+  margin: 0 auto;
+  width: clamp(400px, 75vw, 1100px);
+  overflow-x: hidden; /* prevent horizontal scrollbar on wrapper */
+}
+
+.Info-cards {
+  display: flex;
+  flex-wrap: nowrap;              /* NO wrap, all cards in one row */
+  overflow-x: auto;               /* enable horizontal scroll */
+  scroll-snap-type: x mandatory; /* snap scrolling */
+  gap: 1rem;
+  padding-bottom: 1rem;           /* space for scrollbar */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+.Info-card {
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  width: clamp(250px, 20vw, 280px);
+  height: clamp(260px, 25vh, 300px);
+  flex: 0 0 auto;                 /* don't shrink or grow, fixed width */
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  transition: transform 0.3s ease;
+  position: relative;
+  color: white;
+  scroll-snap-align: start;      /* snap cards at start */
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 0.9rem;
+  padding: 0 10px;
+  padding-top: 20px;
+}
+
+.Info-card p {
+  margin-top: 0;          /* remove any top margin to pull it upward */
+  margin-bottom: 1rem;    /* space below paragraph */
+  font-size: clamp(1rem, 1.25vw, 1.5rem); /* responsive larger font size */
+  line-height: 1.4;
+  color: #fff;   
+  padding: 0 10px;         /* keep text white */
+}
+
+
+
+.Info-cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.Info-cards::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.resposive-wrapper {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.faq-item {
+  margin-bottom: 8px;
+  background-color: #303030;
+  border-bottom: 1px solid black;
+}
+
+.faq-questions {
+  width: 100%;
+  padding: 25px;
+  font-size: 1.5rem;
+  background-color: #303030;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.faq-questions::after {
+  content: "+";
+  font-size: 2rem;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.faq-questions.active::after {
+  content: "×";
+}
+
+.faq-Answers {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #303030;
+  padding: 0 25px;
+  color: #ddd;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.faq-Answers.active {
+  max-height: 1000px;
+  padding: 25px;
+}
+
+.netflix-footer {
+  background-color: black;
+  color: #aaa;
+  padding: 60px 20px 30px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.email-signup p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.email-form {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.email-form input {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+  outline: none;
+}
+
+.email-form button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 0 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.email-form button span {
+  margin-left: 5px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info a {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.language-selector {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.language-selector select {
+  padding: 8px 12px;
+  background-color: #000;
+  color: white;
+  border: 1px solid #666;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #0071eb;
+  text-decoration: underline;
+}
